@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Akshaya S R – Computer Science Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F9; --surface:#FFFFFF; --ink:#101828; --muted:#566074; --line:#D5DCE6; --accent:#2F5BEA; --accent-soft:#E3EAFD;
+  --display:"Bricolage Grotesque","Segoe UI",Helvetica,Arial,sans-serif;
+  --text:"Inter","Segoe UI",Helvetica,Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0D1220;--surface:#151C2E;--ink:#E8ECF4;--muted:#9AA5BA;--line:#27304A;--accent:#8FA8FF;--accent-soft:#1E2A4F;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0D1220;--surface:#151C2E;--ink:#E8ECF4;--muted:#9AA5BA;--line:#27304A;--accent:#8FA8FF;--accent-soft:#1E2A4F;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:56px 24px 72px;display:grid;grid-template-columns:300px 1fr;gap:64px}
+aside{position:sticky;top:40px;align-self:start}
+h1{font-family:var(--display);font-weight:700;font-size:2.9rem;line-height:1.05;letter-spacing:-.02em;margin:0 0 14px}
+.role{font-size:1.05rem;color:var(--muted);margin:0 0 28px}
+.contact{list-style:none;margin:0 0 28px;padding:0;display:grid;gap:10px;font-size:.95rem}
+.contact li{display:grid;grid-template-columns:72px 1fr;gap:8px}
+.contact span{color:var(--muted)}
+.contact a{overflow-wrap:anywhere}
+.facts{border-top:1px solid var(--line);padding-top:20px;display:grid;gap:14px;font-size:.95rem}
+.facts b{display:block;font-weight:600}
+.facts small{color:var(--muted);font-size:.9rem}
+section{margin:0 0 52px}
+h2{font-family:var(--display);font-weight:700;font-size:1.5rem;letter-spacing:-.01em;margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.lead{font-size:1.15rem;line-height:1.7;margin:0;max-width:62ch}
+.proj{padding:22px 0;border-bottom:1px solid var(--line)}
+.proj:first-of-type{padding-top:4px}
+.proj:last-child{border-bottom:0}
+.proj-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:8px}
+.proj h3{font-family:var(--display);font-size:1.25rem;font-weight:700;margin:0;letter-spacing:-.005em}
+.status{font-size:.82rem;font-weight:600;padding:2px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.status.done{background:var(--accent);color:var(--bg)}
+.proj ul{margin:10px 0 12px;padding-left:20px;max-width:64ch}
+.proj li{margin-bottom:4px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.tags li{font-size:.85rem;color:var(--muted);border:1px solid var(--line);background:var(--surface);padding:2px 10px;border-radius:6px}
+.skills{display:grid;gap:14px;margin:0}
+.skills div{display:grid;grid-template-columns:190px 1fr;gap:16px}
+.skills dt{font-weight:600}
+.skills dd{margin:0;color:var(--muted)}
+.edu{display:grid;gap:16px}
+.edu div{display:grid;grid-template-columns:110px 1fr;gap:16px}
+.edu .yr{color:var(--muted);font-variant-numeric:tabular-nums}
+.edu b{font-weight:600}
+.edu small{display:block;color:var(--muted);font-size:.92rem}
+footer{color:var(--muted);font-size:.9rem;padding-top:8px}
+@media (max-width:820px){
+  .wrap{grid-template-columns:1fr;gap:40px;padding:36px 20px 56px}
+  aside{position:static}
+  h1{font-size:2.4rem}
+  .skills div,.edu div{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:no-preference){
+  h1{animation:rise .7s ease-out both}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <h1>Akshaya S R</h1>
+    <p class="role">Computer Science student building AI-driven software. Looking for an internship.</p>
+    <ul class="contact">
+      <li><span>Location</span><div>Madurai, Tamil Nadu</div></li>
+      <li><span>Email</span><a href="mailto:akshayasr0501@gmail.com">akshayasr0501@gmail.com</a></li>
+      <li><span>Phone</span><a href="tel:+918825816382">8825816382</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/akshaya-s-r-a81a12339" rel="noopener">akshaya-s-r</a></li>
+    </ul>
+    <div class="facts">
+      <div><b>B.E. Computer Science and Engineering</b><small>PSNA College of Engineering and Technology, 2024 to 2028</small></div>
+      <div><b>Languages</b><small>English, Tamil</small></div>
+    </div>
+  </aside>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p class="lead">I’m a third-year Computer Science and Engineering student with a strong foundation in programming, databases, and data structures. I’m looking for an internship where I can apply my skills to build AI-driven software solutions and grow as a developer.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <article class="proj">
+        <div class="proj-head"><h3>LLM-Based AI Agent Application</h3><span class="status done">Built</span></div>
+        <ul>
+          <li>An LLM-powered application with an AI agent that handles real-world tasks such as live temperature checks, stock price lookups, and savings calculations.</li>
+          <li>Connects external data sources and custom calculator tools to the LLM, so users get instant, accurate answers through one conversational interface.</li>
+        </ul>
+        <ul class="tags"><li>Python</li><li>LLM API</li><li>LangChain</li><li>yfinance</li><li>OpenWeatherMap API</li><li>Streamlit</li></ul>
+      </article>
+
+      <article class="proj">
+        <div class="proj-head"><h3>Sentiment Analysis of Product Reviews</h3><span class="status done">Built</span></div>
+        <ul>
+          <li>A classifier that labels reviews as positive, negative, or neutral.</li>
+          <li>Visual dashboards that show sentiment trends across products.</li>
+        </ul>
+        <ul class="tags"><li>Python</li><li>Pandas</li><li>Hugging Face Transformers</li><li>Matplotlib</li></ul>
+      </article>
+
+      <article class="proj">
+        <div class="proj-head"><h3>AI Chatbot for College FAQs</h3><span class="status done">Built</span></div>
+        <ul>
+          <li>A retrieval-augmented chatbot that answers student queries on timetables, fees, and events.</li>
+          <li>Built around a custom knowledge base with a simple chat interface.</li>
+        </ul>
+        <ul class="tags"><li>Python</li><li>LangChain</li><li>LLM API</li><li>Streamlit</li></ul>
+      </article>
+
+      <article class="proj">
+        <div class="proj-head"><h3>Handwritten Digit Classifier</h3><span class="status done">Built</span></div>
+        <ul>
+          <li>A convolutional neural network trained on the MNIST dataset to recognize handwritten digits.</li>
+          <li>A small web interface that predicts digits from uploaded images.</li>
+        </ul>
+        <ul class="tags"><li>Python</li><li>TensorFlow/Keras</li><li>CNN</li><li>OpenCV</li></ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <dl class="skills">
+        <div><dt>Programming languages</dt><dd>Java, Python, C, C++</dd></div>
+        <div><dt>Databases</dt><dd>MongoDB, SQL</dd></div>
+        <div><dt>AI/ML and libraries</dt><dd>scikit-learn, Pandas, NumPy, spaCy, TensorFlow/Keras (learning)</dd></div>
+        <div><dt>Tools</dt><dd>Git, GitHub, VS Code, Streamlit</dd></div>
+        <div><dt>Core subjects</dt><dd>Data Structures and Algorithms, DBMS, Operating Systems, Object-Oriented Programming</dd></div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu">
+        <div><span class="yr">2024 – 2028</span><p style="margin:0"><b>B.E. Computer Science and Engineering</b><small>PSNA College of Engineering and Technology · CGPA 7.05 / 10</small></p></div>
+        <div><span class="yr">2024</span><p style="margin:0"><b>Higher Secondary (XII)</b><small>Jeevana School</small></p></div>
+        <div><span class="yr">2022</span><p style="margin:0"><b>Secondary (X)</b><small>Jeevana School</small></p></div>
+      </div>
+    </section>
+
+    <footer>Want to talk about an internship? <a href="mailto:akshayasr0501@gmail.com">Send me an email</a>.</footer>
+  </main>
+</div>
+</body>
+</html>
